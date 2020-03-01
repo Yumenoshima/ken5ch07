@@ -1,20 +1,22 @@
-# covid19
-新型コロナウイルス（COVID19）の国内における感染の状況を厚生労働省の報道発表資料からビジュアルにまとめた。
+# ケン01-03鯖５ch書き込み状況
+ケンラウヘル01-03専用スレ7の書き込み状況をビジュアル化した。。
 
-### 公開ページ
-- 東洋経済オンライン「新型コロナウイルス国内感染の状況」
-- https://toyokeizai.net/sp/visual/tko/covid19/
+### ローカル環境での動かし方(mac環境)
+`open /Applications/Google\ Chrome.app --args --allow-file-access-from-files`
 
-### データソース
-- 厚生労働省の報道発表資料
-- https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000121431_00086.html
+### XPath
+```
+/html/body/div[@class='container container_body mascot']/div[@class='thread']/div/div[@class='meta']
+```
 
-### CSVデータ
-- 使用したデータはCSVファイルでも公開しています。
-- https://toyokeizai.net/sp/visual/tko/covid19/csv/data.csv
+### XPath Helper
+- https://chrome.google.com/webstore/detail/xpath-helper/hgimnogjllphhhkhlmebbmlgjoejdpjl?hl=en
 
-### データの更新
-- 厚生労働省の発表にあわせて不定期で更新する予定です。
+### マークダウンチートシート
+- https://gist.github.com/mignonstyle/083c9e1651d7734f84c99b8cf49d57fa
+
+### 2/29着手
+- https://twitter.com/Yumenoshima1/status/1233648181822406656
 
 ### ライセンス
 - MITライセンスとします。研究、調査、報道など、商用・非商用を問わずご自由にお使いください。
