@@ -1,7 +1,7 @@
 let gData;
 let gRegions = [];
 
-const LAST_DATE = "2020-02-29T00:00:00+09:00";
+const LAST_DATE = "2020-03-01T00:00:00+09:00";
 const AGE_LABELS = ["80代","70代","60代","50代","40代","30代","20代","10代","10歳未満"];
 const REGION_THRESHOLD = 10;
 const COLORS = {
@@ -19,7 +19,7 @@ const init = () => {
   const drawTransitionChart = () => {
     const dates = () => {
       let ret = [];
-      let start = new Date("2020-01-15T00:00:00+09:00");
+      let start = new Date("2020-02-19T00:00:00+09:00");
       let end   = new Date(LAST_DATE);
 
       for(let t = start; t <= end; t.setDate(t.getDate() + 1)) {
@@ -451,7 +451,7 @@ const init = () => {
       drawTransitionChart();
       drawRegionChart("", true);
       drawJapanMap();
-      drawDemographicChart();
+//      drawDemographicChart();
       $("#container").addClass("show");
     })
   }
